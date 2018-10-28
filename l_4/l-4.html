@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <style media="screen">
+      .tumb {
+        width: 200px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="our-app">
+      <h1>{{ message }}</h1>
+      <hr>
+      <h3>Counter : {{ counter }}</h3>
+
+      <div>
+        <span>click Event</span>
+        <button type="button" name="button" v-on:click="increment(1)">Increment by 1</button>
+        <button type="button" name="button" v-on:click="decrement(1)">Decrement by 1</button>
+        <br>
+        <span>Double click Event</span>
+        <button type="button" name="button" v-on:dblclick="increment(5)">Increment by 5</button>
+        <button type="button" name="button" v-on:dblclick="decrement(5)">Decrement by 5</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
