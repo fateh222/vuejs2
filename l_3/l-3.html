@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <style media="screen">
+      .tumb {
+        width: 200px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="our-app">
+      <h1>{{ message }}</h1>
+      <hr>
+      <div>
+        <h3>HTML Attributes Binding</h3>
+        <p> name: {{ data_bind.name }}</p>
+        <p>url: {{ data_bind.url }}</p>
+        <p>Data Binding : <a v-bind:href="data_bind.url">{{ data_bind.name }} </a></p>
+
+        <h3>HTML Class Binding</h3>
+        <p><img :src="data_bind.image" v-bind:class="{tumb:data_bind.is_active}"/></p>
+
+        <h3>HTML Inputs Binding</h3>
+        <form  method="post">
+          <input type="text" name="" :value="data_bind.txtName" placeholder="Name">
+          <input type="text" name="" :value="data_bind.txtEmail" placeholder="Email">
+          <button type="submit" name="button">submit</button>
+        </form>
+
+        <h3>HTML Content Binding</h3>
+        <p v-html="data_bind.htmlContent"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
