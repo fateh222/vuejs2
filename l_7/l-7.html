@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <style media="screen">
+      .tumb {
+        width: 200px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="our-app">
+      <h1>{{ message }}</h1>
+      <hr>
+      <!-- v-on = @ -->
+      <div>
+        <h2>once</h2>
+        <h3>Counter {{ counter }}</h3>
+        <button type="button" name="button" @click.once = "incrementby1">incrementby1</button>
+      </div>
+      <br>
+      <div>
+        <h2>prevent</h2>
+        <a href="https://www.google.co.in/" @click.prevent>Google</a>
+        <form method="post" @submit.prevent>
+          <button type="submit" name="button">submit</button>
+        </form>
+      </div>
+      <br>
+      <div>
+        <h2>stop</h2>
+        <div id="parent-div" @click="submitClick">
+          <button id="child-div" type="button" name="button" @click.stop="submitClick">Click Me</button>
+        </div>
+      </div>
+      <br>
+      <div>
+        <h2>capture</h2>
+        <div id="parent-class" @click.capture="parentClass">
+          <button  type="button" name="button" @click="btnClick">Click Me Again</button>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
