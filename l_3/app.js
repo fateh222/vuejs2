@@ -16,6 +16,5 @@ new Vue({
       txtEmail: "fatehsingh.sunny5@gmail.com",
       htmlContent: "<p>This is paragraph htmlContent</p>"
     }
-
   }
 });
