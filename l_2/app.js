@@ -1,12 +1,7 @@
 new Vue({
   el: '#our-app',
   data: {
-    message: 'Second Tutorial (Methods)',
-    infomation: {
-      first_name: 'Fateh',
-      last_name: 'Singh',
-      profession: 'Software Engineer'
-    }
+    message: 'Tutorial - 2 (Methods)'
   },
   methods: {
     run: function(messge, name) {
