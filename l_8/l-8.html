@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="our-app">
+      <h1>{{ message }}</h1>
+      <hr>
+      <!-- v-on = @ -->
+      <div>
+        <h3>enter</h3>
+        <input type="text" name="" value="" @keypress.enter = "keypressfunc" placeholder="key press ...."/>
+      </div>
+
+      <div>
+        <h3>alt</h3>
+        <input type="text" name="" value="" @keyup.alt.enter = "keypressfunc" placeholder="key up  ...."/>
+      </div>
+
+      <div>
+        <h3>delete</h3>
+        <input type="text" name="" value="" @keyup.delete = "keypressfunc" placeholder="key up  ...."/>
+      </div>
+
+      <div>
+        <h3>ctrl</h3>
+        <input type="text" name="" value="" @keyup.ctrl.enter = "keypressfunc" placeholder="key up  ...."/>
+      </div>
+
+      <div>
+        <h3>space</h3>
+        <input type="text" name="" value="" @keyup.space = "keypressfunc" placeholder="key up  ...."/>
+      </div>
+
+      <div>
+        <h3>keyCode</h3>
+        <input type="text" name="" value="" @keyup.65 = "keypressfunc" placeholder="key up  ...."/>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
