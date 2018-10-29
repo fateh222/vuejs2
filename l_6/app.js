@@ -1,12 +1,7 @@
 new Vue({
   el: '#our-app',
   data: {
-    message: 'Tutorial - 6 (KeyBoard Events - Keypress, Keyup, Keydown)',
-    infomation: {
-      first_name: 'Fateh',
-      last_name: 'Singh',
-      profession: 'Software Engineer'
-    }
+    message: 'Tutorial - 6 (KeyBoard Events - Keypress, Keyup, Keydown)'
   },
   methods: {
     keypressfunc: function(event) {
