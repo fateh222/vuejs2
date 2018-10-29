@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="our-app">
+      <h1>{{ message }}</h1>
+      <hr>
+      <!-- v-on = @ -->
+      <div>
+        {{ runme() }}
+      </div>
+      <div>
+        <form>
+          <input type="text" placeholder="Please enter the first name" v-model="firstname"> {{ name }}
+          <input type="text" placeholder="please enter the last name" v-model="lastname"> {{ email }}
+        </form>
+        <h4>{{ fullname }}</h4>
+      </div>
+
+      <div>
+        <input type="text" v-model="meter">
+        <h4>Length in cm : {{ convertToCentimeter }}</h4>
+      </div>
+
+      <div>
+        <input type="text" v-model="maths">
+        <input type="text" v-model="science">
+        <input type="text" v-model="english">
+        <h3>Total Marks: {{ totalsubjectMarks }}</h3>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
