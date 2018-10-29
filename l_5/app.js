@@ -1,12 +1,7 @@
 new Vue({
   el: '#our-app',
   data: {
-    message: 'Tutorial - 4 (Event Handling - Mouseover, Mouseout, Mousemove)',
-    infomation: {
-      first_name: 'Fateh',
-      last_name: 'Singh',
-      profession: 'Software Engineer'
-    },
+    message: 'Tutorial - 5 (Event Handling - Mouseover, Mouseout, Mousemove)',
     x: 0,
     y: 0,
     txtOver: "Mouseover",
