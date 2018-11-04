@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="our-app-1">
+      <h1>{{ message }}</h1>
+      <hr>
+        First Name: <input type="text" placeholder="First name" v-model="firstname"> <br>
+        Last  Name: <input type="text" placeholder="Last name" v-model="lastname"> <br><br>
+
+        FullName: <input type="text" placeholder="FullName" v-model="fullname"><br>
+
+        <p>Channel name: {{ channelname }}</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
